@@ -1,0 +1,61 @@
+/****************************/
+/* CSS da página contatos.html */
+/****************************/
+	
+body {
+	font-family: sans-serif;
+}
+main {
+	display: table;
+	margin: auto;
+}
+h1 {
+	text-align: center;
+}
+p {
+	overflow: auto;
+	padding: 0.7rem;
+	margin: 0;
+}
+p:nth-child(odd) {
+	background: #dddddd;
+}
+label[for] {
+	display: block;
+	float: left;
+	width: 130px;
+	text-align: right;
+	padding-right: 0.5rem;
+}
+input[type=text] {
+	width: 350px;
+}
+#formCPF {
+	width: 150px;
+}
+#formSenha {
+	width: 100px;
+	color: #ffffff;
+}
+#formEmail {
+	width: 200px;
+}
+textarea {
+	font-family: inherit;
+	width: 350px;
+	height: 6rem;
+}
+button {
+	color: #ffffff;
+	border: 0;
+	border-radius: 4px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+button[type=submit] {
+	background: #0000ff;
+}
+button[type=reset] {
+	float: right;
+	background: #ff0000;
+}

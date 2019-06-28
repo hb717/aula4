@@ -1,0 +1,93 @@
+/********************************************/
+/* Folhas de estilo do tema de ReciclaGatos */
+/********************************************/
+
+/* Padroniza estilos entre os navegadores mais populares */
+@import url('css/reboot.min.css');
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Anton|Quicksand');
+
+/* Estilos globais */
+body {
+	background: url("/img/fundo.jpg") fixed;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/* 
+Converte as tags de "inline" para "block".
+Essas tags passam a funcionar como a tag DIV. 
+*/
+main, header, nav, content, footer {
+	display: block;
+}
+
+/* Estilos do bloco principal */
+main {
+
+}
+
+/* Estilos do cabeçalho */
+header {
+	background-color: rgba(0,50,255,0.8);
+	color: rgb(255, 255,255);
+	overflow: auto;
+	display: flex;
+	align-items: center;
+
+}	
+header h1 {
+	display: inline;
+	margin: 0;
+	font-family: 'Anton', sans-serif;
+}
+header h1 small {
+	display: block;
+}
+header img {
+	margin: 10px 16px 10px 16px;
+}
+
+/* Estilos do menu principal */
+nav {
+	text-align: center;
+	padding: -10px;
+	padding-right: 0px;
+	overflow: auto;
+	display: flex;
+	justify-content: flex-left;
+	background-color: rgba(0,50,255,0.8);
+	width: 100%;
+}
+nav a {
+	background-color: rgb(255,0,0);
+	padding: 4px 12px 4px 12px;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 10px;
+	color: rgb(255,255,255);
+	font-weight: bold;
+	font-size: 1.3rem;
+
+}
+
+/* Usando a pseudo-classe "hover" */
+nav a:hover {
+	background-color: rgb(255,255,0);
+	color: rgb(255,0,255);
+}
+
+/* Estilos do conteúdo da página */
+content {
+	background: rgba(255,255,255,0.95);
+	overflow: auto;
+}
+
+/* Estilos do rodapé */
+footer {
+	background-color: #BBBBBB;
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+}

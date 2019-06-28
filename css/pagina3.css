@@ -1,0 +1,45 @@
+/*****************************/
+/* CSS da página modelo.html */
+/*****************************/
+/* Container for flexboxes */
+* {
+  box-sizing: border-box;
+}
+*  {
+    margin:0;
+    padding:0;
+}
+
+html, body {height:100%;width:100%;}
+
+.geral {
+    min-height:100%;
+    position:relative;
+    width:100%;
+}
+/* Style the header */
+.header {
+  background-color: yellow;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+.footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+	background-color: yellow;
+}
+
+.content {overflow:hidden;}
+.aside {width:200px;}
+.fleft {float:left;background-color: silver;}
+.fright {float:right;background-color: pink;}	
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}

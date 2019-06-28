@@ -1,0 +1,69 @@
+/****************************/
+/* CSS da página sobre.html */
+/****************************/
+	
+/* Estilizando a ".tabela1" */
+.tabela1 {
+	margin: auto;
+	border-spacing: 1px; /* Espaçamento entre as células */
+}
+
+.tabela1 tr:nth-child(odd) { /* Linhas ímpares */
+	background: #fff;
+}
+
+.tabela1 tr:nth-child(even) { /* Linhas pares */
+	background: #ddd;
+}
+
+.tabela1 tr:first-child { /* Linha de cabeçalho */
+	background: #008;
+	color: #fff;
+}
+.tabela1 th, .tabela1 td { /* Todas as células */
+	padding: 4px;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+.tabela1 caption {
+  padding: 0;
+  color: #000;
+  text-align: center;
+  caption-side: bottom;
+  font-size: 80%;
+}
+
+.gatinho { /* Imagem do gatinho */
+	float: right;
+	margin: 0 0 1rem 1rem;
+	border-radius: 3px;
+	box-shadow: 5px 5px 5px 0px #999;
+}
+
+/* Poema Batatinha */
+.batatinha {
+	background: #ffc;
+	color: #800;
+	font-style: italic;
+	padding: 0.01rem 0.6rem 0.6rem 0.6rem;
+}
+.batatinha pre {
+	font-family: inherit; /* inherit --> usar o mesmo estilo do elemento "pai" */
+	font-style: normal;
+}
+
+/* As pseudo-classes "::before" e "::after" permitem acrescentar algum conteúdo antes e depois de um elemento */
+.batatinha em::before {
+	content: " - ";
+}
+.batatinha em::after {
+	content: " - ";
+}
+
+content blockquote {
+	margin-left: 2rem;
+}
+h4 {
+	margin: 1rem 0;
+}
